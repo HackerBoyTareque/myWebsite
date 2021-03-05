@@ -1,0 +1,134 @@
+
+/* working with main class */
+.main{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 20px ;
+    /* background-color: rgb(0, 123, 255); */
+    z-index: 10 !important;
+    transition: 0.2s;
+    /* overflow: hidden; */
+}
+.afterScrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 5px gray;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.subMain{
+    /* position: fixed; */
+    display: flex;
+    flex-direction: row;
+    max-width: 1130px;
+    margin: auto;
+
+    
+}
+
+
+.flexItemLeft{
+    width: 80%;
+}
+
+
+.flexItemRight{
+    width: 20%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* working with navigation area functional component  */
+
+.NavbarBody ul{
+    margin: 0;
+    padding: 0;
+}
+.NavbarBody ul li{
+    list-style: none;
+    float: left;
+    padding: 10px 25px;
+}
+.NavbarBody ul li:hover{
+    transform: scaleX(1.2);
+    border-bottom: 1px solid rgb(0, 123, 255);
+}
+.NavbarBody ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: larger;
+    font-weight: 500;
+    font-family: roboto;
+
+}
+
+
+
+
+
+
+
+
+/* working with contact button fuctional component */
+.contactBtn button{ 
+    background-color: #fff;
+    padding: 10px 25px;
+    float: right;
+    border: 1px solid rgb(0, 123, 255);
+    font-size: larger;
+    font-weight: 500;
+    font-family: roboto;
+}
+
+.contactBtn button:hover{
+    background-color: rgb(0, 123, 255);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* working with 991px screen  */
+ @media screen and (max-width: 991px){
+    .NavbarBody ul li{
+        padding: 10px 10px;
+    }
+}
+
+
+

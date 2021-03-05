@@ -1,0 +1,551 @@
+.mainBody{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mainItem{
+    margin-bottom: 300px;
+    /* z-index: -1; */
+}
+.mainItemSubBody{
+
+    max-width: 1130px;
+    margin: auto;
+}
+/* .mainItem:nth-child(1){
+    z-index: 10 !important;
+} */
+.mainItem:nth-child(4), .mainItem:nth-child(5){
+    z-index: 9;
+    /* position: absolute; */
+}
+.mainItem:nth-last-child(1){
+    /* background-color: rgb(0, 123, 255); */
+    margin-bottom: 0;
+    padding: 100px 0 25px 0;
+}
+
+
+/* working with banner functional components */
+
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  
+}
+.bannerLeft{
+    width: 70%;
+
+    background-color: rgb(0, 123, 255);
+}
+.bannerRight{
+    width: 30%;
+}
+
+.bannerContent{
+    max-width: 1130px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    
+}
+.bannerContentLeft{
+    width: 50%;
+    margin: auto;
+    padding-left: 7px;
+}
+.bannerContentLeft>div{
+    width: 350px;
+    
+}
+.bannerContentLeft>div h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+    font-family: Roboto;
+    text-transform: capitalize;
+}
+.bannerContentLeft>div p{
+    color:rgb(128, 189, 255);
+    line-height: 1.5;
+    font-family: Roboto;
+    margin-bottom: 50px;
+}
+.bannerContentLeft>div a{
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    color: #fff;
+    font-family: roboto;
+}
+.bannerContentLeft>div a:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.3s;
+}
+.bannerContentRight{
+    width: 50%;
+}
+.img{
+    height: 650px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 5px 10px gray;
+    position: relative;
+    top: 250px;
+    z-index: -1;
+
+}
+
+.img1{
+    height: 650px;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/* working with home functional component */
+
+.homeBody{
+    display: flex;
+    max-width: 1130px;
+    flex-direction: row;
+    margin: auto;
+}
+.homeBodyItem{
+    width: 50%;
+    padding-bottom: 10px;
+
+
+}
+.homeBodyItemLeft{
+    max-width: 450px;
+    overflow: hidden;
+    padding-left: 7px;
+   
+
+}
+.homeBodyItemLeft h1{
+    text-transform: capitalize;
+    font-family: roboto;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.homeBodyItemLeft p{
+   color: rgb(128, 128, 128);
+   line-height: 1.5;
+}
+.homeBodyItemRight{
+    float: right;
+}
+.homeBodyItemRightImg{
+    height: 700px;
+    width: 100%;
+}
+.homeBodyItemRightTopSection{
+    height: 250px;
+    max-width: 250px;
+    background-color: rgba(0, 123, 255, 0.3);
+    position: relative;
+    top: -100px;
+    left: -55px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* working with common functional component */
+
+
+ .workBody{
+    max-width: 1130px;
+    margin: auto;
+    padding-left: 7px;
+}
+.workTitle{
+    margin: 0;
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.workText p{
+    max-width: 500px;
+    line-height: 1.5;
+    color: rgb(128, 128, 128);
+}
+.workCardBody{
+    float: left;
+    height: 250px;
+    width: 350px;
+    margin: 5px;
+    background-color: darkcyan; 
+}
+ 
+
+
+
+
+
+
+/* working with gallary components */
+
+
+
+
+.galleryItem {
+    padding: 0 15px;
+    z-index: 90;
+}
+.galleryItem .GalleryImg{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 5px 10px gray;
+    position: relative;
+    top: 0;
+}
+.galleryItem img{
+    text-align: center;
+    margin: auto;
+    max-width: 450px;
+    height: 500px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(43, 142, 247,0.9);
+} 
+.galleryItem .GalleryImg:hover .overlay {
+    opacity: 1;
+  }
+.overlay .galleryItemWorkTitle{
+    padding-left: 5px;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: roboto;
+
+}
+.galleryItemWorkDetails{
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.3;
+}
+/* Slider>div{
+    z-index: -1;
+}
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* working with expertise functional components */
+ .expertMain{
+    height: 500px;
+    width: 350px;
+    margin: 10px auto;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 7px gray;
+}
+.expertImgBody>img{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+.expertHeader>p{
+    font-size: 2rem;
+    font-weight: 900;
+
+    font-family: Roboto;
+    padding: 5px 10px;
+}
+.expertText>p{
+    font-family: Roboto;
+    line-height: 1.3;
+    text-align: justify;
+    padding: 5px 10px;
+}
+
+.sl{
+    /* z-index: 1; */
+}
+
+.expertImgBody{
+    position: relative;
+}
+.expertImgBody>span{
+    z-index: -1;
+    top:-25px;
+    left: -85px;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    font-size: 10rem;
+    text-align: center;
+    color: rgb(212, 217, 221);
+    font-weight: 900;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/* working with contact functinal components */
+
+
+
+/* right */
+
+.contactForm {
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+.contactForm>p{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0;
+    font-family: Roboto;
+    text-transform: capitalize;
+}
+.contactForm form input:nth-child(1), input:nth-child(2), input:nth-child(3){
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+
+    font-family: Roboto;
+    border-radius: 0;
+    border: 1px solid rgb(0, 123, 255);
+    padding: 10px 20px;
+ }
+.contactForm form textarea{
+    margin: 10px 0;
+    width: 100%;
+
+    font-family: Roboto;
+    height: 250px;
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 1px solid rgb(0, 123, 255)
+   
+}
+.contactBtn{
+    background-color: rgb(0, 123, 255);
+    color: #fff;
+    width: 300px;
+    margin: auto;
+    padding: 10px 25px;
+    border: none;
+    font-weight: 500;
+    font-family: roboto;
+}
+.contactBtn:hover{
+    background-color: #fff;
+    border: 1px solid rgb(0, 123, 255);
+    color: black;
+    transition: 0.3s;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+/* working with footer functional components */
+
+
+.footerBody{
+    max-width: 1130px;
+    margin: auto;
+    /* background-color: rgb(0, 123, 255); */
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footerItem{
+    width: 33%;
+
+    /* border: 1px solid red; */
+}
+.footerTitle{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-family: roboto;
+    font-weight: 500;
+    padding: 0 0 0 5px;
+}
+
+.footerItem:nth-child(1) p:nth-child(2){
+    padding: 0 5px 0 5px;
+    font-family: roboto;
+    text-align: justify;
+    line-height: 1.5;
+    color: rgb(189, 189, 189);
+}
+.footerItem:nth-child(2) p{
+    text-align: center;
+}
+.footerItem:nth-child(2) a{
+    text-decoration: none;
+    color: blue;
+    padding:  5px;
+    text-transform: capitalize;
+}
+.footerItem:nth-child(2) a:hover{
+    /* transform: scaleX(2); */
+    color: red;
+
+}
+
+.footerContact{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerContactItem img{
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* working with 991px screen  */
+ @media screen and (max-width: 991px){
+
+ }
+
+/* working withy 767px screen */
+ @media screen and (max-width: 767px){
+    .banner, .bannerContent{
+        flex-direction: column;
+    }
+    .bannerLeft{
+        width: 100%;
+    }
+    .bannerRight{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider{
+    overflow: hidden;
+    display: flex;
+    height: 500px;
+    /* z-index: -1; */
+}
+.slider .ed{
+    /* position: relative; */
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    float: left;
+    /* background-color: aqua; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
